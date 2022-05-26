@@ -20,26 +20,23 @@ public class PosterManager {
         this.items = tmp;
     }
 
-
     public BoxFilm[] findAll() {
         int resultLength = Math.min(items.length, lastMaxCount);
         BoxFilm[] result = new BoxFilm[resultLength];
-
         for (int i = 0; i < result.length; i++) {
+            int index = items.length - i - 1;
+            result[i] = items[index];
             return this.items;
         }
         return result;
     }
 
     public BoxFilm[] findLast() {
-
         int resultLength = Math.min(items.length, lastMaxCount);
         BoxFilm[] result = new BoxFilm[resultLength];
-
-        for (int i = 0; i < result.length; i++) {
+        for (int i = 0; i < lastMaxCount; i++) {
             result[i] = items[items.length - 1 - i];
         }
         return result;
-
     }
 }

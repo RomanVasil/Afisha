@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class BoxFilm {
-        private int id;
-        private String filmName;
-        private int year;
+    private int id;
+    private String filmName;
+    private int year;
 }
 
 
