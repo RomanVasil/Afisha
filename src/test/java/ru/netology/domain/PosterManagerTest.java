@@ -7,6 +7,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 public class PosterManagerTest {
     private PosterManager manager1 = new PosterManager(5);
     private PosterManager manager = new PosterManager();

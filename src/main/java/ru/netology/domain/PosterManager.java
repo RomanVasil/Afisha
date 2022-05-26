@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class PosterManager {
     private BoxFilm[] items = new BoxFilm[0];
     private int lastMaxCount = 10;
