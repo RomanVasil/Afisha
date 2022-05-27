@@ -30,9 +30,10 @@ public class PosterManagerTest {
         manager1.add(boxFilm4);
         manager1.add(boxFilm5);
 
+        BoxFilm[] expected = {boxFilm5, boxFilm4, boxFilm3, boxFilm2, boxFilm1};
         BoxFilm[] actual = manager1.findLast();
         System.out.println(Arrays.toString(actual));
-        assertEquals(5, actual.length);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -48,9 +49,11 @@ public class PosterManagerTest {
         manager.add(boxFilm9);
         manager.add(boxFilm10);
 
+
+        BoxFilm[] expected = {boxFilm1, boxFilm2, boxFilm3, boxFilm4, boxFilm5, boxFilm6, boxFilm7, boxFilm8, boxFilm9, boxFilm10};
         BoxFilm[] actual = manager.findAll();
         System.out.println(Arrays.toString(actual));
-        assertEquals(10, actual.length);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
