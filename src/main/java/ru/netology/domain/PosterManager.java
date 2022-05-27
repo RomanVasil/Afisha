@@ -39,9 +39,9 @@ public class PosterManager {
         int resultLength = Math.min(items.length, lastMaxCount);
         BoxFilm[] result = new BoxFilm[resultLength];
         for (int i = 0; i < this.lastMaxCount; i++) {
-            result[i] = this.items[this.items.length-1-i];
+            result[i] = this.items[this.items.length - 1 - i];
         }
-       // System.arraycopy(this.items, 0, result, 0, 1);
+        // System.arraycopy(this.items, 0, result, 0, 1);
 
         return result;
     }
