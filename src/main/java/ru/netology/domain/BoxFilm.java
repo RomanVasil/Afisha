@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 //@NoArgsConstructor
 //@AllArgsConstructor
-//@Data
+@Data
 
 public class BoxFilm {
     private int id;
