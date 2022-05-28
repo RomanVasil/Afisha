@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PosterManagerTest {
     private PosterManager manager1 = new PosterManager(5);
     private PosterManager manager2 = new PosterManager(11);
+    private PosterManager manager3 = new PosterManager(0);
+
     private PosterManager manager = new PosterManager();
     private BoxFilm boxFilm1 = new BoxFilm(1, "Test", 2022);
     private BoxFilm boxFilm2 = new BoxFilm(2, "Test", 2022);
@@ -24,6 +26,14 @@ public class PosterManagerTest {
     private BoxFilm boxFilm10 = new BoxFilm(10, "Test", 2022);
     private BoxFilm boxFilm11 = new BoxFilm(11, "Test", 2022);
 
+    @Test
+    public void findLast0() {
+
+        BoxFilm[] expected = {};
+        BoxFilm[] actual = manager3.findLast();
+        //System.out.println(Arrays.toString(actual));
+        assertArrayEquals(expected, actual);
+    }
 
     @Test
     public void findLast5() {
