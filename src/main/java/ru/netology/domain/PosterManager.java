@@ -41,8 +41,6 @@ public class PosterManager {
         for (int i = 0; i < this.lastMaxCount; i++) {
             result[i] = this.items[this.items.length - 1 - i];
         }
-        // System.arraycopy(this.items, 0, result, 0, 1);
-
         return result;
     }
 }

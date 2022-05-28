@@ -19,30 +19,6 @@ public class BoxFilm {
         this.filmName = filmName;
         this.year = year;
     }
-
-//    public int getId() {
-//        return this.id;
-//    }
-//
-//    public String getFilmName() {
-//        return this.filmName;
-//    }
-//
-//    public int getYear() {
-//        return this.year;
-//    }
-//
-//    public void setId(int id) {
-//        this.id = id;
-//    }
-//
-//    public void setFilmName(String filmName) {
-//        this.filmName = filmName;
-//    }
-//
-//    public void setYear(int year) {
-//        this.year = year;
-//    }
 }
 
 
